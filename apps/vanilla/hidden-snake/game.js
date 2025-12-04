@@ -166,7 +166,6 @@ function draw() {
   ctx.fill();
 }
 
-// ---------- POSITION ALEATOIRE NOURRITURE ----------
 
 function randomFoodPosition() {
   let newFood;
@@ -240,7 +239,6 @@ function startCountdownAndGame() {
   }, 1000);
 }
 
-// ---------- CONTROLES ----------
 
 document.addEventListener('keydown', (event) => {
   const key = event.key;
