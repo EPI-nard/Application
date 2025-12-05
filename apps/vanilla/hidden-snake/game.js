@@ -260,3 +260,7 @@ startBtn.addEventListener('click', () => {
   initGameState();
   startCountdownAndGame();
 });
+
+document.getElementById("menuBtn").addEventListener("click", () => {
+  window.location.href = "http://localhost:3000";
+});

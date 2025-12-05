@@ -282,3 +282,39 @@ h1 {
     font-size: 32px;
   }
 }
+
+.button-column {
+  display: flex;
+  flex-direction: column; /* empile verticalement */
+  justify-content: flex-start;
+  align-items: stretch;
+  gap: 12px; /* espace entre START et MENU */
+}
+
+
+/* Bouton MENU dans le style néon violet */
+.btn-menu {
+  appearance: none;
+  border: none;
+  cursor: pointer;
+  font-family: "Press Start 2P";
+  font-size: 12px;
+  padding: 12px 22px;
+  border-radius: 14px;
+  text-transform: uppercase;
+  background: radial-gradient(circle at top, #b26bff 0, #8b1aff 45%, #5d00b8 100%);
+  color: #1a001f;
+  box-shadow:
+    0 0 18px rgba(176, 84, 255, 0.8),
+    0 10px 20px rgba(0, 0, 0, 0.9);
+  border: 2px solid rgba(255, 255, 255, 0.10);
+  transition: transform 0.08s, box-shadow 0.08s, filter 0.08s;
+}
+
+.btn-menu:active {
+  transform: translateY(2px) scale(0.97);
+  box-shadow:
+    0 0 12px rgba(176, 84, 255, 0.8),
+    0 6px 12px rgba(0, 0, 0, 0.9);
+  filter: brightness(0.95);
+}
