@@ -4,7 +4,8 @@
   "scripts": {
     "dev": "node ../../node_modules/next/dist/bin/next dev",
     "build": "node ../../node_modules/next/dist/bin/next build",
-    "start": "node ../../node_modules/next/dist/bin/next start"
+    "start": "node ../../node_modules/next/dist/bin/next start",
+    "gh-pages": "next build && next export"
   },
   "devDependencies": {
     "@types/node": "24.10.1",
