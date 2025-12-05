@@ -27,9 +27,7 @@ export default function IntroAnimation() {
   if (stage === "hidden") return null;
 
   return (
-    <div
-      className={`intro-overlay ${stage === "fade" ? "fade-out" : ""}`}
-    >
+    <div className={`intro-overlay ${stage === "fade" ? "fade-out" : ""}`}>
       <div id="intro-container">
         <div id="cross-container">
           <div id="cross">X</div>
@@ -42,28 +40,44 @@ export default function IntroAnimation() {
 
         <div id="nird-container">
           <div id="nird-n">
-            <div className="nird-box">N</div><div className="nird-box">N</div>
-            <div className="nird-box">N</div><div className="nird-box">N</div>
-            <div className="nird-box">N</div><div className="nird-box">N</div>
-            <div className="nird-box">N</div><div className="nird-box">N</div>
+            <div className="nird-box">N</div>
+            <div className="nird-box">N</div>
+            <div className="nird-box">N</div>
+            <div className="nird-box">N</div>
+            <div className="nird-box">N</div>
+            <div className="nird-box">N</div>
+            <div className="nird-box">N</div>
+            <div className="nird-box">N</div>
           </div>
           <div id="nird-i">
-            <div className="nird-box">I</div><div className="nird-box">I</div>
-            <div className="nird-box">I</div><div className="nird-box">I</div>
-            <div className="nird-box">I</div><div className="nird-box">I</div>
-            <div className="nird-box">I</div><div className="nird-box">I</div>
+            <div className="nird-box">I</div>
+            <div className="nird-box">I</div>
+            <div className="nird-box">I</div>
+            <div className="nird-box">I</div>
+            <div className="nird-box">I</div>
+            <div className="nird-box">I</div>
+            <div className="nird-box">I</div>
+            <div className="nird-box">I</div>
           </div>
           <div id="nird-r">
-            <div className="nird-box">R</div><div className="nird-box">R</div>
-            <div className="nird-box">R</div><div className="nird-box">R</div>
-            <div className="nird-box">R</div><div className="nird-box">R</div>
-            <div className="nird-box">R</div><div className="nird-box">R</div>
+            <div className="nird-box">R</div>
+            <div className="nird-box">R</div>
+            <div className="nird-box">R</div>
+            <div className="nird-box">R</div>
+            <div className="nird-box">R</div>
+            <div className="nird-box">R</div>
+            <div className="nird-box">R</div>
+            <div className="nird-box">R</div>
           </div>
           <div id="nird-d">
-            <div className="nird-box">D</div><div className="nird-box">D</div>
-            <div className="nird-box">D</div><div className="nird-box">D</div>
-            <div className="nird-box">D</div><div className="nird-box">D</div>
-            <div className="nird-box">D</div><div className="nird-box">D</div>
+            <div className="nird-box">D</div>
+            <div className="nird-box">D</div>
+            <div className="nird-box">D</div>
+            <div className="nird-box">D</div>
+            <div className="nird-box">D</div>
+            <div className="nird-box">D</div>
+            <div className="nird-box">D</div>
+            <div className="nird-box">D</div>
           </div>
         </div>
       </div>

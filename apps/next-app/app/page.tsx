@@ -15,12 +15,11 @@ export default function HomePage() {
   const totalXp = quests.reduce((sum, quest) => sum + quest.xp, 0);
   const [expandedPillars, setExpandedPillars] = useState<string[]>([]);
 
-  // --- États pour la machine de Rube Goldberg ---
   const [clickStep, setClickStep] = useState(0); // 0 = normal, 1-4 = coins
   const [showModal, setShowModal] = useState(false);
 
   const logicQuestions = [
-    "Si un escargot court plus vite qu’un TGV, que dois-tu arrêter de boire ?",
+    "Si un escargot court plus vite qu'un TGV, que dois-tu arrêter de boire ?",
     "Combien de bits faut-il pour stocker une bêtise infinie ?",
     "Si 42 est la réponse, quelle était déjà la question ?",
   ];
@@ -98,7 +97,7 @@ export default function HomePage() {
       window.location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
     } else {
       setErrorMessage(
-        "Pas tout à fait… vérifie bien : la Nuit de l’Info existe en France depuis 2007. 😉"
+        "Pas tout à fait… vérifie bien : la Nuit de l'Info existe en France depuis 2007. 😉"
       );
     }
   };
