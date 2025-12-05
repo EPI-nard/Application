@@ -35,7 +35,7 @@ Ouvrir [http://localhost:3000](http://localhost:3000)
 - **Quêtes** : défis par pilier (Inclusif, Responsable, Durable)
 - **Missions** : contributions pour la communauté
 - **Animation d'intro** : séquence NIRD au chargement
-- **Easter egg** : Machine de Rube Goldberg cachée
+- **Easter egg** : Machine de Rube Goldberg cachée et Snake
 
 ## 🛠️ Technologies
 
