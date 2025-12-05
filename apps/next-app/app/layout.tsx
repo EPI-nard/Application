@@ -40,7 +40,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <main>{children}</main>
         <footer className='footer'>
           NIRD Quest - &copy; 2025 - EPInard
-          <Link href='/hidden-snake' className='easter-egg'>.</Link>
+          <a href='/hidden-snake' className='easter-egg'>.</a>
         </footer>
       </body>
     </html>
