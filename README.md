@@ -39,6 +39,7 @@ Ouvrir [http://localhost:3000](http://localhost:3000)
 
 ## 🛠️ Technologies
 
+- **NodeJS 25.2.1**
 - **Next.js 15** (App Router)
 - **TypeScript**
 - **CSS Modules**
