@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Machine de Rube Goldberg – Captchas</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <!-- Bouton pour lancer un captcha aléatoire -->
+    <button type="button" id="random-captcha-btn" class="main-trigger">
+      Lancer un captcha
+    </button>
+  </div>
+
+  <!-- POPUP / MODAL -->
+  <div id="captcha-modal" class="modal-overlay hidden">
+    <div class="modal">
+      <button type="button" id="close-modal" class="close-btn" aria-label="Fermer le captcha">×</button>
+
+      <!-- CAPTCHA 1 : TEXTE ALÉATOIRE -->
+      <section id="captcha-text-section" class="captcha-block hidden">
+        <h2>Captcha 1 : Recopiez le texte</h2>
+
+        <form id="form-text">
+          <div class="captcha-row">
+            <div id="captcha-box-1"><span id="captcha-text-1"></span></div>
+            <button type="button" id="refresh-1">↻</button>
+          </div>
+
+          <input type="text" id="input-1" placeholder="Recopiez le texte" required>
+          <p id="msg-1" class="message"></p>
+
+          <button type="submit">Envoyer</button>
+        </form>
+      </section>
+
+      <!-- CAPTCHA 2 : QUESTION DE LOGIQUE -->
+      <section id="captcha-logic-section" class="captcha-block hidden">
+        <h2>Captcha 2 : Question de logique</h2>
+
+        <form id="form-logic">
+          <p id="logic-question"></p>
+
+          <input type="text" id="logic-answer" placeholder="Votre réponse" required>
+          <p id="msg-logic" class="message"></p>
+
+          <button type="submit">Envoyer</button>
+        </form>
+      </section>
+
+      <!-- CAPTCHA 3 : CLIQUER SUR LE BON PAYS -->
+      <section id="captcha-map-section" class="captcha-block hidden">
+        <h2>Captcha 3 : Cliquez sur le pays demandé</h2>
+
+        <form id="form-map">
+          <p id="map-instruction"></p>
+
+          <div class="map">
+            <button type="button" class="country" data-country="france">🇫🇷 France</button>
+            <button type="button" class="country" data-country="espagne">🇪🇸 Espagne</button>
+            <button type="button" class="country" data-country="italie">🇮🇹 Italie</button>
+            <button type="button" class="country" data-country="allemagne">🇩🇪 Allemagne</button>
+          </div>
+
+          <p id="msg-map" class="message"></p>
+
+          <button type="submit">Envoyer</button>
+        </form>
+      </section>
+
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
