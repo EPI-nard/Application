@@ -1,0 +1,144 @@
+.intro-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  opacity: 1;
+  transition: opacity 0.8s ease;
+}
+
+.intro-overlay.fade-out {
+  opacity: 0;
+  pointer-events: none;
+}
+
+#intro-container {
+  position: fixed;
+  inset: 0;
+  z-index: 1;
+
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  background-color: white;
+
+  animation: zoom 1.5s ease 4.4s forwards;
+}
+
+#nird-container {
+  display: flex;
+  height: 11.11vh;
+  overflow: hidden;
+  margin-top: 44.44vh;
+  position: absolute;
+  animation: left 1.5s ease 2.8s forwards;
+}
+
+.nird-box {
+  background-color: white;
+  height: 11.11vh;
+  width: 6.25vw;
+  text-align: center;
+  font-size: 8vh;
+  font-weight: bold;
+  color: black;
+}
+
+#nird-n,
+#nird-i,
+#nird-r,
+#nird-d {
+  margin-top: 33.33vh;
+}
+
+#nird-n {
+  animation: scroll 2s ease-out 0.1s forwards;
+}
+#nird-i {
+  animation: scroll 2s ease-out 0.3s forwards;
+}
+#nird-r {
+  animation: scroll 2s ease-out 0.5s forwards;
+}
+#nird-d {
+  animation: scroll 2s ease-out 0.7s forwards;
+}
+
+#cross-container {
+  display: flex;
+  height: 22.22vh;
+  margin-top: 40vh;
+  position: absolute;
+  animation: cross 1.5s ease 2.8s forwards;
+  align-items: center;
+  margin-left: -50vw;
+}
+
+#cross {
+  background-color: transparent;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  font-size: 35vh;
+  color: #0b0816;
+  font-weight: lighter;
+}
+
+#klub {
+  width: 21.875vw;
+  padding-left: 0.625vw;
+}
+
+#white-box {
+  background-color: white;
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  margin-left: -62.5vw;
+  animation: left-white 1.5s ease 2.8s forwards;
+}
+
+@keyframes scroll {
+  0% {
+    margin-top: 33.33vh;
+  }
+  100% {
+    margin-top: -77.77vh;
+  }
+}
+
+@keyframes left-white {
+  0% {
+    margin-left: -62.5vw;
+  }
+  100% {
+    margin-left: -109.375vw;
+  }
+}
+
+@keyframes left {
+  0% {
+    margin-left: 0;
+  }
+  100% {
+    margin-left: -34.375vw;
+  }
+}
+
+@keyframes cross {
+  0% {
+    margin-left: -50vw;
+  }
+  100% {
+    margin-left: 22.5vw;
+  }
+}
+
+@keyframes zoom {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(100);
+  }
+}

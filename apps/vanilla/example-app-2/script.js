@@ -1,1 +1,0 @@
-alert("Hello from Example App 2!");
